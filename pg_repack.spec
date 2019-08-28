@@ -10,7 +10,7 @@ Source0:        https://github.com/reorg/%{name}/archive/ver_1.4.4.tar.gz
 BuildRequires:  postgresql, gcc, openssl-devel, postgresql-server
 BuildRequires:  postgresql-libs, postgresql-devel
 BuildRequires:  readline-devel, zlib-devel, postgresql-static
-Requires:       postgresql-seriver
+%{?postgresql_module_requires}
 
 %description
 pg_repack is a PostgreSQL extension which lets you remove 
